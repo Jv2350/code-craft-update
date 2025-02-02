@@ -39,8 +39,8 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
     >
       <Link href={`/snippets/${snippet._id}`} className="h-full block">
         <div
-          className="relative h-full bg-[#1e1e2e]/80 backdrop-blur-sm rounded-xl 
-          border border-[#313244]/50 hover:border-[#313244] 
+          className="relative h-full bg-[#1e1e2e]/80 backdrop-blur-sm rounded-xl
+          border border-[#313244]/50 hover:border-[#313244]
           transition-all duration-300 overflow-hidden"
         >
           <div className="p-6">
@@ -49,7 +49,7 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
               <div className="flex items-center gap-3">
                 <div className="relative">
                   <div
-                    className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 
+                    className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20
                   group-hover:opacity-30 transition-all duration-500"
                     area-hidden="true"
                   />
@@ -72,7 +72,7 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
                   </span>
                   <div className="flex items-center gap-2 text-xs text-gray-500">
                     <Clock className="size-3" />
-                    {new Date(snippet._creationTime).toLocaleDateString()}
+                    {new Date(snippet._creationTime).toLocaleString()}
                   </div>
                 </div>
               </div>

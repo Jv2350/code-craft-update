@@ -27,7 +27,7 @@ function Comment({ comment, currentUserId, isDeleting, onDelete }: CommentProps)
             <div className="min-w-0">
               <span className="block text-[#e1e1e3] font-medium truncate">{comment.userName}</span>
               <span className="block text-sm text-[#808086]">
-                {new Date(comment._creationTime).toLocaleDateString()}
+                {new Date(comment._creationTime).toLocaleString()}
               </span>
             </div>
           </div>

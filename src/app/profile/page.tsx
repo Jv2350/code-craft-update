@@ -74,7 +74,7 @@ function ProfilePage() {
 
         {/* Main content */}
         <div
-          className="bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-3xl shadow-2xl 
+          className="bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-3xl shadow-2xl
         shadow-black/50 border border-gray-800/50 backdrop-blur-xl overflow-hidden"
         >
           {/* Tabs */}
@@ -204,7 +204,7 @@ function ProfilePage() {
                     <div className="flex justify-center mt-8">
                       <button
                         onClick={handleLoadMore}
-                        className="px-6 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 rounded-lg flex items-center gap-2 
+                        className="px-6 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 rounded-lg flex items-center gap-2
                         transition-colors"
                       >
                         Load More
@@ -222,7 +222,7 @@ function ProfilePage() {
                     <div key={snippet._id} className="group relative">
                       <Link href={`/snippets/${snippet._id}`}>
                         <div
-                          className="bg-black/20 rounded-xl border border-gray-800/50 hover:border-gray-700/50 
+                          className="bg-black/20 rounded-xl border border-gray-800/50 hover:border-gray-700/50
                           transition-all duration-300 overflow-hidden h-full group-hover:transform
                         group-hover:scale-[1.02]"
                         >
@@ -256,7 +256,7 @@ function ProfilePage() {
                             <div className="flex items-center justify-between text-sm text-gray-400">
                               <div className="flex items-center gap-2">
                                 <Clock className="w-4 h-4" />
-                                <span>{new Date(snippet._creationTime).toLocaleDateString()}</span>
+                                <span>{new Date(snippet._creationTime).toLocaleString()}</span>
                               </div>
                               <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                             </div>

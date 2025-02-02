@@ -83,7 +83,7 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
       <div className="relative flex items-center gap-8">
         <div className="relative group">
           <div
-            className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full 
+            className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full
           blur-xl opacity-50 group-hover:opacity-75 transition-opacity"
           />
           <img
@@ -103,11 +103,11 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <h1 className="text-3xl font-bold text-white">{userData.name}</h1>
-            {userData.isPro && (
+            {/* {userData.isPro && (
               <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm font-medium">
                 Pro Member
               </span>
-            )}
+            )} */}
           </div>
           <p className="text-gray-400 flex items-center gap-2">
             <UserIcon className="w-4 h-4" />
@@ -128,7 +128,7 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
           >
             {/* Glow effect */}
             <div
-              className={`absolute inset-0 bg-gradient-to-r ${stat.color} opacity-0 group-hover:opacity-10 transition-all 
+              className={`absolute inset-0 bg-gradient-to-r ${stat.color} opacity-0 group-hover:opacity-10 transition-all
               duration-500 ${stat.gradient}`}
             />
 

@@ -1,17 +1,31 @@
-import EditorPanel from "./_components/EditorPanel";
 import Header from "./_components/Header";
-import OutputPanel from "./_components/OutputPanel";
+import ResizablePanels from "./_components/ResizablePanels";
+import CompetitionCard from "./_components/CompetitionCard"; // New Component for Competition
 
 export default function Home() {
+  const competitions = [
+    {
+      id: 1,
+      name: "Debugging Challenge 1",
+      description: "Fix the issues in the given code and get high scores!",
+      startTime: "2025-02-10T10:00:00Z", // Example date
+    },
+  ];
+
   return (
     <div className="min-h-screen">
-      <div className="max-w-[1800px] mx-auto p-4">
+      <div className="max-w-full mx-auto p-4">
         <Header />
+        {/* Competition Dashboard Section */}
+        <section className="mt-8">
+          <div className="mt-4 gap-6">
+            {competitions.map((competition) => (
+              <CompetitionCard key={competition.id} competition={competition} />
+            ))}
+          </div>
+        </section>
+        {/* <ResizablePanels /> */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <EditorPanel />
-          <OutputPanel />
-        </div>
       </div>
     </div>
   );
